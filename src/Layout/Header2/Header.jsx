@@ -104,7 +104,7 @@ const Header = () => {
             </li> */}
           </ul>
         </nav>
-        <button className="connect_btn">CONNECT WALLET</button>
+        {/* <button className="connect_btn">CONNECT WALLET</button> */}
 
         <div className="menu-btn">
           <div

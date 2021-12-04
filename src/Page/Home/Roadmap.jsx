@@ -62,24 +62,18 @@ function Roadmap() {
     <div className="roadmap-wrapper" id="roadmap">
       <div className="container-wrapper">
         <div className="roadmap py-100px">
-          {/* <p className=" text-center dark-blue fs-96px weight-7   ">
-            <span className="title-effect-wrapper teko">
-              Road Map
-              <div className="title-effect teko">Road Map</div>
-            </span>
-          </p> */}
-          <Slide top duration={1200} delay={1300}>
+          {/* <Slide top duration={1200} delay={1300}> */}
             <div>
               <h2>ROADMAP</h2>
             </div>
-          </Slide>
+          {/* </Slide> */}
           <div className="roadmap-content-wrapper">
             <div className="roadmap-content" ref={lineRef}>
               <div className="roadmap-box bot" ref={bottle}>
                 <div className="bottle">
                   <div className="milk" ref={milkRef}></div>
                   <div className="svg">
-                    <Bottle />
+                    {/* <Bottle /> */}
                   </div>
                 </div>
               </div>

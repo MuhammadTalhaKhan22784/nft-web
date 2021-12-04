@@ -4,9 +4,10 @@ header {
 
 .web-header {
   width: 100%;
-  background-color: #2a2e37f7;
+  /* background-color: #2a2e37f7; */
+  background-color: #00000099;
   overflow: hidden;
-  border-bottom: 3px solid #ffba00;
+  /* border-bottom: 3px solid #007EA1; */
   transition: 0.5s ease-in-out;
   box-shadow: 15px 0 40px 0 rgb(0 0 0 / 50%);
   position: fixed;
@@ -50,7 +51,6 @@ header {
   align-items: center;
   list-style: none;
   font-weight: 600;
-  
 }
 
 .nav-sec ul li i {
@@ -60,10 +60,10 @@ header {
 .connect_btn {
   width: max-content;
   padding: 17px 34px;
-  background-color: #ffba00;
+  background-color: #007EA1;
   color: #fff;
   transition: all 0.3s ease;
-  border: 4px solid #ffba00;
+  border: 4px solid #007EA1;
   line-height: 1;
   text-align: center;
   font-size: 18px;
@@ -73,7 +73,7 @@ header {
 
 .connect_btn:hover {
   background-color: transparent;
-  color: #ffba00;
+  color: #007EA1;
 }
 
 .nav-sec ul li a {
@@ -99,13 +99,13 @@ header {
   left: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffba00;
+  background-color: #007EA1;
   transition: top 0.2s linear;
 }
 
 .nav-sec ul li .active-nav,
 .nav-sec ul li a:hover {
-  border-color: #ffba00;
+  border-color: #007EA1;
 }
 
 .nav-sec ul li .active-nav::after,
