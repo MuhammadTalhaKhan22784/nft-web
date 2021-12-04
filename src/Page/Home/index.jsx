@@ -7,7 +7,8 @@ import Header from "../../Layout/Header2/Header";
 import Hero from "./Hero";
 import Roadmap from "./Roadmap";
 import Team from "./Team";
-import TeamSlider from "../../Components/Slider/TeamSlider";
+import GallerySlider from "../../Components/Slider/GallerySlider";
+import Faq from "./Faq";
 const Home = () => {
   return (
     <>
@@ -26,9 +27,10 @@ const Home = () => {
       {/* <div className="sample">
 
         </div> */}
-      {/* <Team /> */}
-      <TeamSlider />
+      <Team />
+      <GallerySlider />
       <Roadmap />
+      <Faq />
       {/* </div> */}
     </>
   );

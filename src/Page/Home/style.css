@@ -85,8 +85,6 @@
   height: 100vh;
   position: absolute;
   background-color: #000000bf;
-
-
 }
 
 .h_overlay > div {
@@ -222,9 +220,33 @@
   background-repeat: no-repeat;
 }
 
+.container-wrapper_t {
+  max-width: 1800px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.team_overlay {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  /* min-height: 100vh; */
+  background-color: #000000b8;
+}
+
+/* .our-team {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+} */
+
 .container-wrapper {
   width: 100%;
-  min-height: 1639px;
+  min-height: 1590px;
   background-color: #000000de;
 }
 
@@ -404,8 +426,10 @@
   }
 }
 
+/* gallery */
+/* 
 .team {
-  background-image: url("https://media.istockphoto.com/photos/young-man-looks-at-road-map-near-on-mountain-road-switzerland-picture-id874487892?b=1&k=20&m=874487892&s=170667a&w=0&h=xONcSfaw3vP_f2ExZtnF6pLCLgiL9Mr0jCnOOG2G_ZQ=");
+  background-image: url("../../Assets/Images/team.jpg");
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -419,7 +443,7 @@
   width: 100%;
   height: 100vh;
   background-color: #000000de;
-}
+} */
 
 /* slider */
 
@@ -568,4 +592,219 @@
 @media screen and (min-width: 1400px) {
   .h_overlay {
   }
+}
+
+/* team */
+
+.team-card {
+  max-width: 320px;
+}
+.team-card-content {
+  max-width: 260px;
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 30px;
+  padding: 22px 20px;
+  margin: 0 2rem;
+  margin-top: -40px;
+  z-index: 10000;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.team-card-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #eef5f7;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.team-img img {
+  width: 100%;
+}
+
+/* our-team-wrapper STARTS */
+.our-team-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url(../../Assets/Images/team.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.moon {
+  position: absolute;
+  top: -150px;
+  left: 20px;
+  width: clamp(137px, 20.833333333333332vw, 300px);
+  /* transform: translateY(50%); */
+}
+
+.slider-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 40px;
+}
+
+.slider-btns button {
+  width: 60px;
+  height: 60px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #04060f;
+  color: #04060f;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.slider-btns button i {
+  color: #007ea1;
+}
+
+/* faq */
+
+.faq_section {
+  width: 100%;
+  min-height: 100vh;
+  /* padding: 4rem 0; */
+  background-image: url("../../Assets/Images/faq.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.faq_overlay {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000bd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.faq_section h1 {
+  font-size: 4rem;
+  margin: 0 auto 2rem auto;
+  padding-top: 40px;
+  color: white;
+  font-weight: 600;
+  width: max-content;
+  border-bottom: 3px solid #007ea1;
+  animation: mover-x 1s infinite alternate;
+  /* width: max-content;
+  text-align: center;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  border-bottom: 4px solid #007ea1;
+  letter-spacing: 2px;
+  line-height: 80px;
+  font-size: 3rem;
+  color: white;
+  animation: mover-x 1s infinite alternate; */
+  /* font-family: "Carter One", cursive; */
+}
+
+.faq-wrapper {
+  margin: 22px auto;
+  border-radius: 12px 12px 0 0;
+  transition: 0.3s linear;
+  border: 1px solid #e2e2e2c7;
+  overflow: hidden;
+}
+
+.faq-qs {
+  background-color: #f8f8f8e6;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 16px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.159);
+}
+
+.faq-qs h6 {
+  font-weight: 700;
+  font-size: 16px;
+  width: 98%;
+  padding-right: 8px;
+}
+
+.faqs-answer {
+  transition: 0.3s linear;
+  height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.active-faq .faqs-answer {
+  padding: 15px;
+  height: auto;
+}
+
+.active-faq .faqs-answer p {
+  color: white;
+}
+
+.faq-arrow {
+  transition: all 0.5s linear;
+  margin-left: auto;
+  display: block;
+}
+
+.faq-arrow * {
+  color: #fff;
+  font-size: 15px !important;
+  margin-left: 4px;
+}
+
+.faq-arrow {
+  background-color: #007ea1;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-faq .faq-arrow {
+  transform-origin: center;
+  margin: 0;
+  padding: 0;
+  transform: rotate(90deg);
+  transition: all 0.3s linear;
 }

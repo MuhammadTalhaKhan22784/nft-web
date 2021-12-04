@@ -69,28 +69,28 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={activeNav === 5 ? "active-nav" : ""}
                 onClick={() => {
                   sectActiveNav(5);
                   setMenuOpen(false);
                 }}
-                href="#mint"
+                to="team"
               >
-                Mint
-              </a>
+                Team
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={activeNav === 1 ? "active-nav" : ""}
                 onClick={() => {
                   sectActiveNav(1);
                   setMenuOpen(false);
                 }}
-                href="#specs"
+                to="faq"
               >
-                Contact
-              </a>
+                Faq
+              </Link>
             </li>
 
             {/* <li>
